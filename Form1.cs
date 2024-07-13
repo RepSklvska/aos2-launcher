@@ -28,6 +28,7 @@ namespace aos2_launcher
 			LabelCurrentVersion.Text = currentVersion;
 			ComboBoxVersionSelect.DataSource = versions;
 			ComboBoxVersionSelect.SelectedIndex = versions.IndexOf(currentVersion);
+			ButtonSetVersion.Enabled = false;
 		}
 
 		private void Form1_Load(object sender, EventArgs e)
@@ -45,7 +46,20 @@ namespace aos2_launcher
 		{
 			ComboBox comboBox = (ComboBox)sender;
 			selectedVersion = versions[comboBox.SelectedIndex];
+			ButtonSetVersion.Enabled = selectedVersion != currentVersion;
+		}
 
+		private void ButtonSetVersion_Click(object sender, EventArgs e)
+		{
+			Console.WriteLine(selectedVersion);
+			if (selectedVersion == currentVersion)
+			{
+				Console.WriteLine("??");
+			}
+			else
+			{
+				Commands.Checkout(repo, branches[selectedVersion]);
+			}
 		}
 	}
 }

@@ -70,6 +70,7 @@
 			this.ButtonSetVersion.TabIndex = 2;
 			this.ButtonSetVersion.Text = "Set Version";
 			this.ButtonSetVersion.UseVisualStyleBackColor = true;
+			this.ButtonSetVersion.Click += new System.EventHandler(this.ButtonSetVersion_Click);
 			// 
 			// ButtonVersionInfo
 			// 

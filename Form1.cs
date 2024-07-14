@@ -7,7 +7,7 @@ namespace aos2_launcher
 {
 	public partial class Form1 : Form
 	{
-		public Repository repo = new Repository(@"C:\Users\a\Desktop\aos2-all-versions");
+		public Repository repo = new Repository(System.Environment.CurrentDirectory);
 		public Dictionary<string, Branch> branches = new Dictionary<string, Branch>();
 		public IList<string> versions = new List<string>();
 		public string selectedVersion = "";

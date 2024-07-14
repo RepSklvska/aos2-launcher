@@ -3,7 +3,9 @@ A launcher for switching version
 
 <br>
 
-<a href="https://drive.google.com/file/d/1jNdQ-q29CW5fmC7FRi1TsnA4Z5sXaU9q/view">Download full game packed with version selector</a>
+Download full game packed with version selector:
+
+https://drive.google.com/file/d/1jNdQ-q29CW5fmC7FRi1TsnA4Z5sXaU9q/view
 
 <br>
 

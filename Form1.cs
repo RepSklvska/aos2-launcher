@@ -58,8 +58,31 @@ namespace aos2_launcher
 			}
 			else
 			{
+				ButtonSetVersion.Enabled = false;
 				Commands.Checkout(repo, branches[selectedVersion]);
+				LabelCurrentVersion.Text = selectedVersion;
 			}
+		}
+
+		private void ButtonPlay_Click(object sender, EventArgs e)
+		{
+			System.Diagnostics.Process process = new System.Diagnostics.Process();
+			System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo
+			{
+				WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden,
+				FileName = "cmd.exe",
+				Arguments = "/C explorer steam://rungameid/390710"
+			};
+			process.StartInfo = startInfo;
+			process.Start();
+
+			this.Close();
+		}
+
+		private void ButtonAbout_Click(object sender, EventArgs e)
+		{
+			FormInfo formInfo = new FormInfo();
+			formInfo.ShowDialog();
 		}
 	}
 }

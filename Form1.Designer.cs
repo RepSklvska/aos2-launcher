@@ -31,7 +31,6 @@
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.Label1 = new System.Windows.Forms.Label();
 			this.ButtonSetVersion = new System.Windows.Forms.Button();
-			this.ButtonVersionInfo = new System.Windows.Forms.Button();
 			this.ComboBoxVersionSelect = new System.Windows.Forms.ComboBox();
 			this.ButtonAbout = new System.Windows.Forms.Button();
 			this.ButtonPlay = new System.Windows.Forms.Button();
@@ -44,11 +43,10 @@
 			this.groupBox1.Controls.Add(this.LabelCurrentVersion);
 			this.groupBox1.Controls.Add(this.Label1);
 			this.groupBox1.Controls.Add(this.ButtonSetVersion);
-			this.groupBox1.Controls.Add(this.ButtonVersionInfo);
 			this.groupBox1.Controls.Add(this.ComboBoxVersionSelect);
 			this.groupBox1.Location = new System.Drawing.Point(12, 12);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(172, 99);
+			this.groupBox1.Size = new System.Drawing.Size(172, 70);
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Version Selection";
@@ -64,7 +62,7 @@
 			// 
 			// ButtonSetVersion
 			// 
-			this.ButtonSetVersion.Location = new System.Drawing.Point(91, 70);
+			this.ButtonSetVersion.Location = new System.Drawing.Point(91, 41);
 			this.ButtonSetVersion.Name = "ButtonSetVersion";
 			this.ButtonSetVersion.Size = new System.Drawing.Size(75, 23);
 			this.ButtonSetVersion.TabIndex = 2;
@@ -72,42 +70,35 @@
 			this.ButtonSetVersion.UseVisualStyleBackColor = true;
 			this.ButtonSetVersion.Click += new System.EventHandler(this.ButtonSetVersion_Click);
 			// 
-			// ButtonVersionInfo
-			// 
-			this.ButtonVersionInfo.Location = new System.Drawing.Point(6, 70);
-			this.ButtonVersionInfo.Name = "ButtonVersionInfo";
-			this.ButtonVersionInfo.Size = new System.Drawing.Size(75, 23);
-			this.ButtonVersionInfo.TabIndex = 1;
-			this.ButtonVersionInfo.Text = "Info";
-			this.ButtonVersionInfo.UseVisualStyleBackColor = true;
-			// 
 			// ComboBoxVersionSelect
 			// 
 			this.ComboBoxVersionSelect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.ComboBoxVersionSelect.FormattingEnabled = true;
 			this.ComboBoxVersionSelect.Location = new System.Drawing.Point(6, 42);
 			this.ComboBoxVersionSelect.Name = "ComboBoxVersionSelect";
-			this.ComboBoxVersionSelect.Size = new System.Drawing.Size(160, 21);
+			this.ComboBoxVersionSelect.Size = new System.Drawing.Size(74, 21);
 			this.ComboBoxVersionSelect.TabIndex = 0;
 			this.ComboBoxVersionSelect.SelectedIndexChanged += new System.EventHandler(this.ComboBoxVersionSelect_SelectedIndexChanged);
 			// 
 			// ButtonAbout
 			// 
-			this.ButtonAbout.Location = new System.Drawing.Point(12, 117);
+			this.ButtonAbout.Location = new System.Drawing.Point(12, 88);
 			this.ButtonAbout.Name = "ButtonAbout";
 			this.ButtonAbout.Size = new System.Drawing.Size(81, 23);
 			this.ButtonAbout.TabIndex = 1;
 			this.ButtonAbout.Text = "About";
 			this.ButtonAbout.UseVisualStyleBackColor = true;
+			this.ButtonAbout.Click += new System.EventHandler(this.ButtonAbout_Click);
 			// 
 			// ButtonPlay
 			// 
-			this.ButtonPlay.Location = new System.Drawing.Point(103, 117);
+			this.ButtonPlay.Location = new System.Drawing.Point(103, 88);
 			this.ButtonPlay.Name = "ButtonPlay";
 			this.ButtonPlay.Size = new System.Drawing.Size(81, 23);
 			this.ButtonPlay.TabIndex = 2;
 			this.ButtonPlay.Text = "Play";
 			this.ButtonPlay.UseVisualStyleBackColor = true;
+			this.ButtonPlay.Click += new System.EventHandler(this.ButtonPlay_Click);
 			// 
 			// LabelCurrentVersion
 			// 
@@ -122,7 +113,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(196, 150);
+			this.ClientSize = new System.Drawing.Size(196, 122);
 			this.Controls.Add(this.ButtonPlay);
 			this.Controls.Add(this.ButtonAbout);
 			this.Controls.Add(this.groupBox1);
@@ -145,7 +136,6 @@
 
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button ButtonSetVersion;
-		private System.Windows.Forms.Button ButtonVersionInfo;
 		private System.Windows.Forms.ComboBox ComboBoxVersionSelect;
 		private System.Windows.Forms.Button ButtonAbout;
 		private System.Windows.Forms.Button ButtonPlay;

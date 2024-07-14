@@ -29,203 +29,219 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInfo));
-			this.tabControl1 = new System.Windows.Forms.TabControl();
-			this.TabPageVersions = new System.Windows.Forms.TabPage();
-			this.TabPageTheLauncher = new System.Windows.Forms.TabPage();
-			this.ButtonOK = new System.Windows.Forms.Button();
-			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.LinkLabelGithubRepo = new System.Windows.Forms.LinkLabel();
-			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.LinkLabelGithubPage = new System.Windows.Forms.LinkLabel();
-			this.LinkLabelSteam = new System.Windows.Forms.LinkLabel();
-			this.LinkLabelEmail = new System.Windows.Forms.LinkLabel();
-			this.tabControl1.SuspendLayout();
-			this.TabPageVersions.SuspendLayout();
-			this.TabPageTheLauncher.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-			this.groupBox1.SuspendLayout();
-			this.groupBox2.SuspendLayout();
-			this.SuspendLayout();
+			tabControl1 = new System.Windows.Forms.TabControl();
+			TabPageVersions = new System.Windows.Forms.TabPage();
+			richTextBox1 = new System.Windows.Forms.RichTextBox();
+			TabPageTheLauncher = new System.Windows.Forms.TabPage();
+			groupBox2 = new System.Windows.Forms.GroupBox();
+			LinkLabelEmail = new System.Windows.Forms.LinkLabel();
+			LinkLabelSteam = new System.Windows.Forms.LinkLabel();
+			LinkLabelGithubPage = new System.Windows.Forms.LinkLabel();
+			label2 = new System.Windows.Forms.Label();
+			pictureBox1 = new System.Windows.Forms.PictureBox();
+			groupBox1 = new System.Windows.Forms.GroupBox();
+			LinkLabelGithubRepo = new System.Windows.Forms.LinkLabel();
+			label1 = new System.Windows.Forms.Label();
+			ButtonOK = new System.Windows.Forms.Button();
+			tabControl1.SuspendLayout();
+			TabPageVersions.SuspendLayout();
+			TabPageTheLauncher.SuspendLayout();
+			groupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+			groupBox1.SuspendLayout();
+			SuspendLayout();
 			// 
 			// tabControl1
 			// 
-			this.tabControl1.Controls.Add(this.TabPageVersions);
-			this.tabControl1.Controls.Add(this.TabPageTheLauncher);
-			this.tabControl1.Location = new System.Drawing.Point(12, 12);
-			this.tabControl1.Name = "tabControl1";
-			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(320, 188);
-			this.tabControl1.TabIndex = 0;
+			tabControl1.Controls.Add(TabPageVersions);
+			tabControl1.Controls.Add(TabPageTheLauncher);
+			tabControl1.Location = new System.Drawing.Point(14, 14);
+			tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			tabControl1.Name = "tabControl1";
+			tabControl1.SelectedIndex = 0;
+			tabControl1.Size = new System.Drawing.Size(373, 217);
+			tabControl1.TabIndex = 0;
 			// 
 			// TabPageVersions
 			// 
-			this.TabPageVersions.Controls.Add(this.richTextBox1);
-			this.TabPageVersions.Location = new System.Drawing.Point(4, 22);
-			this.TabPageVersions.Name = "TabPageVersions";
-			this.TabPageVersions.Padding = new System.Windows.Forms.Padding(3);
-			this.TabPageVersions.Size = new System.Drawing.Size(312, 162);
-			this.TabPageVersions.TabIndex = 0;
-			this.TabPageVersions.Text = "Versions";
-			this.TabPageVersions.UseVisualStyleBackColor = true;
-			// 
-			// TabPageTheLauncher
-			// 
-			this.TabPageTheLauncher.Controls.Add(this.groupBox2);
-			this.TabPageTheLauncher.Controls.Add(this.groupBox1);
-			this.TabPageTheLauncher.Location = new System.Drawing.Point(4, 22);
-			this.TabPageTheLauncher.Name = "TabPageTheLauncher";
-			this.TabPageTheLauncher.Padding = new System.Windows.Forms.Padding(3);
-			this.TabPageTheLauncher.Size = new System.Drawing.Size(312, 162);
-			this.TabPageTheLauncher.TabIndex = 1;
-			this.TabPageTheLauncher.Text = "The Launcher";
-			this.TabPageTheLauncher.UseVisualStyleBackColor = true;
-			// 
-			// ButtonOK
-			// 
-			this.ButtonOK.Location = new System.Drawing.Point(257, 206);
-			this.ButtonOK.Name = "ButtonOK";
-			this.ButtonOK.Size = new System.Drawing.Size(75, 23);
-			this.ButtonOK.TabIndex = 1;
-			this.ButtonOK.Text = "OK";
-			this.ButtonOK.UseVisualStyleBackColor = true;
-			this.ButtonOK.Click += new System.EventHandler(this.ButtonOK_Click);
+			TabPageVersions.Controls.Add(richTextBox1);
+			TabPageVersions.Location = new System.Drawing.Point(4, 24);
+			TabPageVersions.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			TabPageVersions.Name = "TabPageVersions";
+			TabPageVersions.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			TabPageVersions.Size = new System.Drawing.Size(365, 189);
+			TabPageVersions.TabIndex = 0;
+			TabPageVersions.Text = "Versions";
+			TabPageVersions.UseVisualStyleBackColor = true;
 			// 
 			// richTextBox1
 			// 
-			this.richTextBox1.BackColor = System.Drawing.Color.White;
-			this.richTextBox1.Location = new System.Drawing.Point(6, 6);
-			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.ReadOnly = true;
-			this.richTextBox1.Size = new System.Drawing.Size(300, 150);
-			this.richTextBox1.TabIndex = 0;
-			this.richTextBox1.TabStop = false;
-			this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+			richTextBox1.BackColor = System.Drawing.Color.White;
+			richTextBox1.Location = new System.Drawing.Point(7, 7);
+			richTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			richTextBox1.Name = "richTextBox1";
+			richTextBox1.ReadOnly = true;
+			richTextBox1.Size = new System.Drawing.Size(349, 172);
+			richTextBox1.TabIndex = 0;
+			richTextBox1.TabStop = false;
+			richTextBox1.Text = resources.GetString("richTextBox1.Text");
 			// 
-			// pictureBox1
+			// TabPageTheLauncher
 			// 
-			this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.pictureBox1.Image = global::aos2_launcher.Properties.Resources.avatar;
-			this.pictureBox1.Location = new System.Drawing.Point(243, 19);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Controls.Add(this.LinkLabelGithubRepo);
-			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(7, 7);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(299, 67);
-			this.groupBox1.TabIndex = 1;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Information";
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(6, 16);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(200, 13);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Acceleration of Suguri 2 Version Selector";
-			// 
-			// LinkLabelGithubRepo
-			// 
-			this.LinkLabelGithubRepo.AutoSize = true;
-			this.LinkLabelGithubRepo.Location = new System.Drawing.Point(6, 29);
-			this.LinkLabelGithubRepo.Name = "LinkLabelGithubRepo";
-			this.LinkLabelGithubRepo.Size = new System.Drawing.Size(93, 13);
-			this.LinkLabelGithubRepo.TabIndex = 1;
-			this.LinkLabelGithubRepo.TabStop = true;
-			this.LinkLabelGithubRepo.Text = "GitHub Reopsitory";
-			this.LinkLabelGithubRepo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelGithubRepo_LinkClicked);
+			TabPageTheLauncher.Controls.Add(groupBox2);
+			TabPageTheLauncher.Controls.Add(groupBox1);
+			TabPageTheLauncher.Location = new System.Drawing.Point(4, 24);
+			TabPageTheLauncher.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			TabPageTheLauncher.Name = "TabPageTheLauncher";
+			TabPageTheLauncher.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			TabPageTheLauncher.Size = new System.Drawing.Size(365, 189);
+			TabPageTheLauncher.TabIndex = 1;
+			TabPageTheLauncher.Text = "The Launcher";
+			TabPageTheLauncher.UseVisualStyleBackColor = true;
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Controls.Add(this.LinkLabelEmail);
-			this.groupBox2.Controls.Add(this.LinkLabelSteam);
-			this.groupBox2.Controls.Add(this.LinkLabelGithubPage);
-			this.groupBox2.Controls.Add(this.label2);
-			this.groupBox2.Controls.Add(this.pictureBox1);
-			this.groupBox2.Location = new System.Drawing.Point(7, 80);
-			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(299, 76);
-			this.groupBox2.TabIndex = 2;
-			this.groupBox2.TabStop = false;
-			this.groupBox2.Text = "Author";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(6, 16);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(117, 13);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Iztecteocuitlatl Sokolov";
-			// 
-			// LinkLabelGithubPage
-			// 
-			this.LinkLabelGithubPage.AutoSize = true;
-			this.LinkLabelGithubPage.Location = new System.Drawing.Point(81, 42);
-			this.LinkLabelGithubPage.Name = "LinkLabelGithubPage";
-			this.LinkLabelGithubPage.Size = new System.Drawing.Size(68, 13);
-			this.LinkLabelGithubPage.TabIndex = 2;
-			this.LinkLabelGithubPage.TabStop = true;
-			this.LinkLabelGithubPage.Text = "GitHub Page";
-			this.LinkLabelGithubPage.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelGithubPage_LinkClicked);
-			// 
-			// LinkLabelSteam
-			// 
-			this.LinkLabelSteam.AutoSize = true;
-			this.LinkLabelSteam.Location = new System.Drawing.Point(6, 42);
-			this.LinkLabelSteam.Name = "LinkLabelSteam";
-			this.LinkLabelSteam.Size = new System.Drawing.Size(69, 13);
-			this.LinkLabelSteam.TabIndex = 3;
-			this.LinkLabelSteam.TabStop = true;
-			this.LinkLabelSteam.Text = "Steam Profile";
-			this.LinkLabelSteam.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelSteam_LinkClicked);
+			groupBox2.Controls.Add(LinkLabelEmail);
+			groupBox2.Controls.Add(LinkLabelSteam);
+			groupBox2.Controls.Add(LinkLabelGithubPage);
+			groupBox2.Controls.Add(label2);
+			groupBox2.Controls.Add(pictureBox1);
+			groupBox2.Location = new System.Drawing.Point(8, 92);
+			groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			groupBox2.Name = "groupBox2";
+			groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			groupBox2.Size = new System.Drawing.Size(349, 88);
+			groupBox2.TabIndex = 2;
+			groupBox2.TabStop = false;
+			groupBox2.Text = "Author";
 			// 
 			// LinkLabelEmail
 			// 
-			this.LinkLabelEmail.AutoSize = true;
-			this.LinkLabelEmail.Location = new System.Drawing.Point(155, 42);
-			this.LinkLabelEmail.Name = "LinkLabelEmail";
-			this.LinkLabelEmail.Size = new System.Drawing.Size(32, 13);
-			this.LinkLabelEmail.TabIndex = 4;
-			this.LinkLabelEmail.TabStop = true;
-			this.LinkLabelEmail.Text = "Email";
-			this.LinkLabelEmail.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabelEmail_LinkClicked);
+			LinkLabelEmail.AutoSize = true;
+			LinkLabelEmail.Location = new System.Drawing.Point(181, 48);
+			LinkLabelEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			LinkLabelEmail.Name = "LinkLabelEmail";
+			LinkLabelEmail.Size = new System.Drawing.Size(36, 15);
+			LinkLabelEmail.TabIndex = 4;
+			LinkLabelEmail.TabStop = true;
+			LinkLabelEmail.Text = "Email";
+			LinkLabelEmail.LinkClicked += LinkLabelEmail_LinkClicked;
+			// 
+			// LinkLabelSteam
+			// 
+			LinkLabelSteam.AutoSize = true;
+			LinkLabelSteam.Location = new System.Drawing.Point(7, 48);
+			LinkLabelSteam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			LinkLabelSteam.Name = "LinkLabelSteam";
+			LinkLabelSteam.Size = new System.Drawing.Size(77, 15);
+			LinkLabelSteam.TabIndex = 3;
+			LinkLabelSteam.TabStop = true;
+			LinkLabelSteam.Text = "Steam Profile";
+			LinkLabelSteam.LinkClicked += LinkLabelSteam_LinkClicked;
+			// 
+			// LinkLabelGithubPage
+			// 
+			LinkLabelGithubPage.AutoSize = true;
+			LinkLabelGithubPage.Location = new System.Drawing.Point(94, 48);
+			LinkLabelGithubPage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			LinkLabelGithubPage.Name = "LinkLabelGithubPage";
+			LinkLabelGithubPage.Size = new System.Drawing.Size(74, 15);
+			LinkLabelGithubPage.TabIndex = 2;
+			LinkLabelGithubPage.TabStop = true;
+			LinkLabelGithubPage.Text = "GitHub Page";
+			LinkLabelGithubPage.LinkClicked += LinkLabelGithubPage_LinkClicked;
+			// 
+			// label2
+			// 
+			label2.AutoSize = true;
+			label2.Location = new System.Drawing.Point(7, 18);
+			label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			label2.Name = "label2";
+			label2.Size = new System.Drawing.Size(129, 15);
+			label2.TabIndex = 1;
+			label2.Text = "Iztecteocuitlatl Sokolov";
+			// 
+			// pictureBox1
+			// 
+			pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
+			pictureBox1.Location = new System.Drawing.Point(284, 22);
+			pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			pictureBox1.Name = "pictureBox1";
+			pictureBox1.Size = new System.Drawing.Size(58, 58);
+			pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			pictureBox1.TabIndex = 0;
+			pictureBox1.TabStop = false;
+			// 
+			// groupBox1
+			// 
+			groupBox1.Controls.Add(LinkLabelGithubRepo);
+			groupBox1.Controls.Add(label1);
+			groupBox1.Location = new System.Drawing.Point(8, 8);
+			groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			groupBox1.Name = "groupBox1";
+			groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			groupBox1.Size = new System.Drawing.Size(349, 77);
+			groupBox1.TabIndex = 1;
+			groupBox1.TabStop = false;
+			groupBox1.Text = "Information";
+			// 
+			// LinkLabelGithubRepo
+			// 
+			LinkLabelGithubRepo.AutoSize = true;
+			LinkLabelGithubRepo.Location = new System.Drawing.Point(7, 33);
+			LinkLabelGithubRepo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			LinkLabelGithubRepo.Name = "LinkLabelGithubRepo";
+			LinkLabelGithubRepo.Size = new System.Drawing.Size(104, 15);
+			LinkLabelGithubRepo.TabIndex = 1;
+			LinkLabelGithubRepo.TabStop = true;
+			LinkLabelGithubRepo.Text = "GitHub Reopsitory";
+			LinkLabelGithubRepo.LinkClicked += LinkLabelGithubRepo_LinkClicked;
+			// 
+			// label1
+			// 
+			label1.AutoSize = true;
+			label1.Location = new System.Drawing.Point(7, 18);
+			label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			label1.Name = "label1";
+			label1.Size = new System.Drawing.Size(219, 15);
+			label1.TabIndex = 0;
+			label1.Text = "Acceleration of Suguri 2 Version Selector";
+			// 
+			// ButtonOK
+			// 
+			ButtonOK.Location = new System.Drawing.Point(300, 238);
+			ButtonOK.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			ButtonOK.Name = "ButtonOK";
+			ButtonOK.Size = new System.Drawing.Size(88, 27);
+			ButtonOK.TabIndex = 1;
+			ButtonOK.Text = "OK";
+			ButtonOK.UseVisualStyleBackColor = true;
+			ButtonOK.Click += ButtonOK_Click;
 			// 
 			// FormInfo
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(344, 241);
-			this.Controls.Add(this.ButtonOK);
-			this.Controls.Add(this.tabControl1);
-			this.MaximizeBox = false;
-			this.MinimizeBox = false;
-			this.Name = "FormInfo";
-			this.ShowIcon = false;
-			this.Text = "About";
-			this.TopMost = true;
-			this.tabControl1.ResumeLayout(false);
-			this.TabPageVersions.ResumeLayout(false);
-			this.TabPageTheLauncher.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
-			this.groupBox2.ResumeLayout(false);
-			this.groupBox2.PerformLayout();
-			this.ResumeLayout(false);
-
+			AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+			AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			ClientSize = new System.Drawing.Size(401, 278);
+			Controls.Add(ButtonOK);
+			Controls.Add(tabControl1);
+			Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+			MaximizeBox = false;
+			MinimizeBox = false;
+			Name = "FormInfo";
+			ShowIcon = false;
+			Text = "About";
+			TopMost = true;
+			tabControl1.ResumeLayout(false);
+			TabPageVersions.ResumeLayout(false);
+			TabPageTheLauncher.ResumeLayout(false);
+			groupBox2.ResumeLayout(false);
+			groupBox2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+			groupBox1.ResumeLayout(false);
+			groupBox1.PerformLayout();
+			ResumeLayout(false);
 		}
 
 		#endregion

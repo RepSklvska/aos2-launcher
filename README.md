@@ -29,6 +29,8 @@ Notice:
 
 - You can still open the game from Steam client after version changed.
 
+- Don't move or copy `aos2-launcher.exe` to other folders, use shortcut instead.
+
 Uninstallation:
 
 1. Delete `.git` (hidden file) and `aos2-launcher.exe` 
